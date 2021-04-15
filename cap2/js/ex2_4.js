@@ -5,14 +5,15 @@ function check(){
     var outResposta = document.getElementById("outValor"); 
 
     // OBTEM O CONTEUDO DOS CAMPOS DE ENTRADA
-    var preco = Number(inputPreco.value);
-    var gramas = Number(inputGramas.value);
+    var preco = parseFloat(inputPreco.value);
+    var gramas = parseFloat(inputGramas.value);
 
     // CALCULA O VALOR A SER PAGO PELO CLIENTE
     var calculo = (preco * gramas)/1000;
-    
+     
+  
     // Altera o conteudo da linha de resposta
-    outResposta.textContent= "Valor a pagar R$: " + calculo.toFixed(2);
+    outResposta.textContent= "Valor a pagar R$: " + calculo.toFixed(2)  ;
 
      
 };
