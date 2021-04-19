@@ -9,7 +9,6 @@ function desconto(){
     var desconto = parseInt(preco) * 2;
 
     outNome.textContent = "Promoção de " + nome; 
-
     outDesconto.textContent = "Leve 2 por apenas R$: " + desconto.toFixed(2)
 }
 
